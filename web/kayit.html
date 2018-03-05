@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <meta charset="utf-8">
+        <title>Kayit Formu</title>
+        <link rel="stylesheet" type="text/css" href="css/kayit.css">
+        <script type="text/javascript" src="js/kayit.js"></script>
+    </head>
+    <body>
+        <form action="/kayit" method="post">
+            <div class="clearfix">
+                <label for="email">E-mail</label>
+                <input type="email" name="email" id="email" placeholder="E-mail" required/>
+            </div>
+            <div class="clearfix">
+                <label for="sifre">Şifre</label>
+                <input type="password" name="psw" id="sifre" placeholder="Şifre" required/>
+            </div>
+            <div class="clearfix">
+                <label for="sifretkr">Şifre(Tekrar)</label>
+                <input type="password" id="sifretkr" placeholder="Şifre(Tekrar)" required/>
+            </div>
+            <div class="clearfix">
+                <label id="message" style="visibility:hidden;">Şifre Eşleşmedi</label>
+                <input type="submit" name="submit" value="Gönder"/>
+            </div>
+        </form>
+    </body>
+</html>
